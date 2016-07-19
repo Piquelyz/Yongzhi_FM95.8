@@ -121,6 +121,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tv" destination="GXe-Pe-dsy" id="J0X-pZ-9ba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVv-nT-Rmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
