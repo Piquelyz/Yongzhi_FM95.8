@@ -35,6 +35,10 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
     var audioPlayer:MPMoviePlayerController = MPMoviePlayerController()
     //声明一个计时器
     var timer = NSTimer?()
+    //喜欢歌曲列表
+    var likeData = Dictionary<String,String>()
+    var name = ""
+    var likeUrl = ""
     
 
 
@@ -115,6 +119,9 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
         let audioUrl:String = rowData["url"] as! String
         //播放音乐
         onSetAudio(audioUrl)
+        name = rowData["title"] as! String
+        likeUrl = rowData["url"] as! String
+
     }
     
     //视图跳转时执行的方法
@@ -142,6 +149,8 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
             let firDict:NSDictionary = self.tableData[0] as! NSDictionary
             //获取歌曲文件地址
             let audioUrl:String = firDict["url"] as! String
+            name = firDict["title"] as! String
+            likeUrl = firDict["url"] as! String
             //播放歌曲
             onSetAudio(audioUrl)
             let imgUrl:String = firDict["picture"] as! String
@@ -174,7 +183,7 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
     func onSetAudio(url:String){
         //展厅当前歌曲的播放
         self.audioPlayer.stop()
-        //获取各取文件
+        //获取歌曲文件
         self.audioPlayer.contentURL = NSURL(string:url)
         //播放
         self.audioPlayer.play()
@@ -250,6 +259,14 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
             audioPlayer.pause()
             btnPlay!.addGestureRecognizer(tap!)
 //            iv!.removeGestureRecognizer(tap!)
+        }
+    }
+    
+    //喜欢操作
+    @IBAction func onLike(sender: AnyObject) {
+       likeData[name] = likeUrl
+        for (key,value) in likeData{
+            print("\(key);\(value)")
         }
     }
     
