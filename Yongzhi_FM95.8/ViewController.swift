@@ -35,7 +35,8 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
     var audioPlayer:MPMoviePlayerController = MPMoviePlayerController()
     //声明一个计时器
     var timer = NSTimer?()
-    //喜欢歌曲列表
+    
+    //喜欢歌曲列表功能实现
     var likeData = Dictionary<String,String>()
     var name = ""
     var likeUrl = ""
