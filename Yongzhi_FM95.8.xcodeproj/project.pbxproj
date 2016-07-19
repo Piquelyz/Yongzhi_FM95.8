@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732E68CC1D372D03006E69F7 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E68CB1D372D03006E69F7 /* HttpController.swift */; };
 		73699AED1D371A030089FCDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699AEC1D371A030089FCDE /* AppDelegate.swift */; };
 		73699AEF1D371A030089FCDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699AEE1D371A030089FCDE /* ViewController.swift */; };
 		73699AF21D371A030089FCDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73699AF01D371A030089FCDE /* Main.storyboard */; };
 		73699AF41D371A030089FCDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73699AF31D371A030089FCDE /* Assets.xcassets */; };
 		73699AF71D371A030089FCDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73699AF51D371A030089FCDE /* LaunchScreen.storyboard */; };
 		73699B021D371A030089FCDE /* Yongzhi_FM95_8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699B011D371A030089FCDE /* Yongzhi_FM95_8Tests.swift */; };
+		73699B0D1D371A8E0089FCDE /* ChannelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699B0C1D371A8E0089FCDE /* ChannelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		732E68CB1D372D03006E69F7 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		73699AE91D371A030089FCDE /* Yongzhi_FM95.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yongzhi_FM95.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73699AEC1D371A030089FCDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73699AEE1D371A030089FCDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		73699AFD1D371A030089FCDE /* Yongzhi_FM95.8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yongzhi_FM95.8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73699B011D371A030089FCDE /* Yongzhi_FM95_8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yongzhi_FM95_8Tests.swift; sourceTree = "<group>"; };
 		73699B031D371A030089FCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73699B0C1D371A8E0089FCDE /* ChannelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				73699AEC1D371A030089FCDE /* AppDelegate.swift */,
 				73699AEE1D371A030089FCDE /* ViewController.swift */,
 				73699AF01D371A030089FCDE /* Main.storyboard */,
+				73699B0C1D371A8E0089FCDE /* ChannelController.swift */,
+				732E68CB1D372D03006E69F7 /* HttpController.swift */,
 				73699AF31D371A030089FCDE /* Assets.xcassets */,
 				73699AF51D371A030089FCDE /* LaunchScreen.storyboard */,
 				73699AF81D371A030089FCDE /* Info.plist */,
@@ -146,6 +152,7 @@
 				TargetAttributes = {
 					73699AE81D371A030089FCDE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H98Z4S797L;
 					};
 					73699AFC1D371A030089FCDE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -199,6 +206,8 @@
 			files = (
 				73699AEF1D371A030089FCDE /* ViewController.swift in Sources */,
 				73699AED1D371A030089FCDE /* AppDelegate.swift in Sources */,
+				73699B0D1D371A8E0089FCDE /* ChannelController.swift in Sources */,
+				732E68CC1D372D03006E69F7 /* HttpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yongzhi_FM95.8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yongzhi.Yongzhi-FM95-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +350,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Yongzhi_FM95.8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Yongzhi.Yongzhi-FM95-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +403,7 @@
 				73699B081D371A030089FCDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73699B091D371A030089FCDE /* Build configuration list for PBXNativeTarget "Yongzhi_FM95.8Tests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +412,7 @@
 				73699B0B1D371A030089FCDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
