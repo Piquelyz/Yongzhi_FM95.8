@@ -263,7 +263,7 @@ class ViewController: UIViewController,HttpProtocol,ChannelProtocol{
         }
     }
     
-    //喜欢操作
+    //喜欢操作，存到个字典中，可以到时候显示在tableView中
     @IBAction func onLike(sender: AnyObject) {
        likeData[name] = likeUrl
         for (key,value) in likeData{
