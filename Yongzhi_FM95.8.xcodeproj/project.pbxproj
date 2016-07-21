@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730B94451D40624E006AA15B /* Hi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730B94441D40624E006AA15B /* Hi.swift */; };
 		732E68CC1D372D03006E69F7 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732E68CB1D372D03006E69F7 /* HttpController.swift */; };
 		73699AED1D371A030089FCDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699AEC1D371A030089FCDE /* AppDelegate.swift */; };
 		73699AEF1D371A030089FCDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73699AEE1D371A030089FCDE /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		730B94441D40624E006AA15B /* Hi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hi.swift; sourceTree = "<group>"; };
 		732E68CB1D372D03006E69F7 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		73699AE91D371A030089FCDE /* Yongzhi_FM95.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yongzhi_FM95.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73699AEC1D371A030089FCDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				73699AF31D371A030089FCDE /* Assets.xcassets */,
 				73699AF51D371A030089FCDE /* LaunchScreen.storyboard */,
 				73699AF81D371A030089FCDE /* Info.plist */,
+				730B94441D40624E006AA15B /* Hi.swift */,
 			);
 			path = Yongzhi_FM95.8;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				73699AEF1D371A030089FCDE /* ViewController.swift in Sources */,
 				73699AED1D371A030089FCDE /* AppDelegate.swift in Sources */,
 				73699B0D1D371A8E0089FCDE /* ChannelController.swift in Sources */,
+				730B94451D40624E006AA15B /* Hi.swift in Sources */,
 				732E68CC1D372D03006E69F7 /* HttpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
